@@ -1,2 +1,2 @@
-#Day studing git and github
+# Day studing git and github
 My firt commit in use git on SSH
