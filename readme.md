@@ -1,2 +1,2 @@
-#Day studing git and github
-My firt commit in use git on SSH
+# Day studing git and github
+My first commit in use git on SSH
