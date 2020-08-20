@@ -1,2 +1,6 @@
-# Day studing git and github
-My first commit in use git on SSH
+# This repository is exclusive for Trybe's exercises and challenges
+#Content
+>GIT
+>SSH
+>SHELL
+>HTML & CSS
