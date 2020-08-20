@@ -7,9 +7,17 @@ Content covered
 > HTML & CSS
 =======
 # This repository is exclusive for Trybe's exercises and challenges
+<<<<<<< HEAD
 #Content
 >GIT
 >SSH
 >SHELL
 >HTML & CSS
+>>>>>>> shell-script-updates
+=======
+<h2>Content</h2>
+<strong>GIT</strong><br/>
+<strong>SSH</strong><br/>
+<strong>SHELL</strong><br/>
+<strong>HTML & CSS</strong>
 >>>>>>> shell-script-updates
