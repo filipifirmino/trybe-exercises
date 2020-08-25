@@ -67,13 +67,49 @@ header h1{
 
 }
 
+/*Curiosidades*/
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.curiosidades{
+    flex:1;
+    text-align: center;
+    margin:10px;
+    margin-left: 20px;
+    border: 5px solid burlywood;
+    padding-left:10px ;
+    padding-right:10px ;
+    box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.curiosidades img {
+    width: 300px;
+    height: 150px;
+    margin:5px;
+}
+.cur{
+    margin-left: 20px;;
+}
 
-
-
-
+/*Aside style*/
+aside {
+    margin-left: 20px;
+}
+aside a{
+    text-decoration: none;
+    color: #000;
+}
+aside li {
+    list-style-type: circle;
+}
+aside a:hover{
+    color:violet;
+}
 
 /*Footer style*/
 footer{
+    margin-top:20px;
     text-align: center;
     border-top:1px solid #ccc;
     height: 35px;
