@@ -34,3 +34,50 @@ header h1{
 .menu-principal li a:hover{
     color:blue;
 }
+/*Section data style*/
+.dados{
+    margin-left: 20px;
+}
+.dados p{
+    max-width: 1200px;
+    font-size: medium;
+    
+    
+}
+.nomeCient{
+    font-style:italic;
+}
+
+.camarao{
+    border:10px solid burlywood;
+    box-shadow: 4px 5px 3px rgba(0,0,0,0.5);
+    margin-left: 20%;
+    margin-right: auto;
+}
+.table {
+    margin:0px;
+    border-collapse: collapse;
+    
+}
+.table, th ,td{
+    border: 1px solid black;
+    font-size: medium;
+    padding:15px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/*Footer style*/
+footer{
+    text-align: center;
+    border-top:1px solid #ccc;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12pt;
+    color:#c9c9c9
+}
