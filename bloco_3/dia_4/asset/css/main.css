@@ -1,0 +1,119 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:14pt;
+}
+/*Style Header*/
+header{
+    border-bottom:1px solid #ccc;
+}
+header h1{
+    margin-left: 20px;
+   
+}
+.menu-principal{
+    list-style: none;
+    margin: 0;
+    text-align: right;
+  
+}
+
+.menu-principal li{
+    display: inline-block;
+    padding:5px;
+    color: lightblue;
+   
+}
+
+.menu-principal li a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.menu-principal li a:hover{
+    color:blue;
+}
+/*Section data style*/
+.dados{
+    margin-left: 20px;
+}
+.dados p{
+    max-width: 1200px;
+    font-size: medium;
+    
+    
+}
+.nomeCient{
+    font-style:italic;
+}
+
+.camarao{
+    border:10px solid burlywood;
+    box-shadow: 4px 5px 3px rgba(0,0,0,0.5);
+    margin-left: 20%;
+    margin-right: auto;
+}
+.table {
+    margin:0px;
+    border-collapse: collapse;
+    
+}
+.table, th ,td{
+    border: 1px solid black;
+    font-size: medium;
+    padding:15px;
+    text-align: center;
+
+}
+
+/*Curiosidades*/
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.curiosidades{
+    flex:1;
+    text-align: center;
+    margin:10px;
+    margin-left: 20px;
+    border: 5px solid burlywood;
+    padding-left:10px ;
+    padding-right:10px ;
+    box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.curiosidades img {
+    width: 300px;
+    height: 150px;
+    margin:5px;
+}
+.cur{
+    margin-left: 20px;;
+}
+
+/*Aside style*/
+aside {
+    margin-left: 20px;
+}
+aside a{
+    text-decoration: none;
+    color: #000;
+}
+aside li {
+    list-style-type: circle;
+}
+aside a:hover{
+    color:violet;
+}
+
+/*Footer style*/
+footer{
+    margin-top:20px;
+    text-align: center;
+    border-top:1px solid #ccc;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12pt;
+    color:#c9c9c9
+}
