@@ -5,4 +5,5 @@
 <strong>SSH</strong><br/>
 <strong>SHELL</strong><br/>
 <strong>HTML & CSS</strong>
+<strong>Java Script</strong>
 
