@@ -4,6 +4,6 @@
 <strong>GIT</strong><br/>
 <strong>SSH</strong><br/>
 <strong>SHELL</strong><br/>
-<strong>HTML & CSS</strong>
-<strong>Java Script</strong>
+<strong>HTML & CSS</strong><br/>
+<strong>Java Script</strong><br/>
 
