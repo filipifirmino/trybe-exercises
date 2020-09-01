@@ -3,7 +3,6 @@ let result = 0;
 
 for(let i=0; i<fruits.length; i+=1){
      result += fruits[i];
-     
 }
 
 if(result>15){
