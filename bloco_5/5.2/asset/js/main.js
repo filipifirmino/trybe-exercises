@@ -11,3 +11,10 @@ let content = document.createElement('div');
 content.className = "main-content";
 //Inserindo a tag como filha do body
 document.body.appendChild(content);
+
+//Criando div 
+let center = document.createElement('div')
+//Setando class
+center.className = "center-content";
+// Atribuindo ao elemento pai
+document.querySelector(".main-content").appendChild(center)
