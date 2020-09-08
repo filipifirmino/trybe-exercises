@@ -18,3 +18,7 @@ let center = document.createElement('div')
 center.className = "center-content";
 // Atribuindo ao elemento pai
 document.querySelector(".main-content").appendChild(center)
+
+let text  = document.createElement('p');
+text.innerText = "Mais importante que a velocidade é a direção";
+document.querySelector(".center-content").appendChild(text);
