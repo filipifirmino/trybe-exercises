@@ -32,3 +32,10 @@ let side = document.createElement('div');
 side.className = "left-content";
 //Inserindo na arvore dom
 document.querySelector(".main-content").appendChild(side);
+
+//Criando elemento div
+let sideRight = document.createElement('div');
+//Inserindo class
+sideRight.className("right-content");
+//Inserindo ao dom
+document.querySelector(".main-content").appendChild(sideRight);
