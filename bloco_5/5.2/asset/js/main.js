@@ -36,6 +36,15 @@ document.querySelector(".main-content").appendChild(side);
 //Criando elemento div
 let sideRight = document.createElement('div');
 //Inserindo class
-sideRight.className("right-content");
+sideRight.className ="right-content";
 //Inserindo ao dom
 document.querySelector(".main-content").appendChild(sideRight);
+
+//Criando elemento image
+let image = document.createElement('img');
+//Setando class
+image.className = 'small-image';
+// Inserindo src
+image.src = "https://picsum.photos/200";
+//Inserindo no dom
+document.querySelector(".left-content").appendChild(image)
