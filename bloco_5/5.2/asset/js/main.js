@@ -19,6 +19,16 @@ center.className = "center-content";
 // Atribuindo ao elemento pai
 document.querySelector(".main-content").appendChild(center)
 
+//Criando elemento p
 let text  = document.createElement('p');
+//Adcionando texto ao elemto 
 text.innerText = "Mais importante que a velocidade é a direção";
+//Inserindo na arvore dom 
 document.querySelector(".center-content").appendChild(text);
+
+//Criando elemento div
+let side = document.createElement('div');
+//Inserindo a class
+side.className = "left-content";
+//Inserindo na arvore dom
+document.querySelector(".main-content").appendChild(side);
