@@ -51,14 +51,16 @@ document.querySelector(".left-content").appendChild(image)
 
 //Criando ul
 let list = document.createElement('ul');
-let listItems = document.createElement('li');
+// Adcionando ul a elemento pai
+document.querySelector('.right-content').appendChild(list);
+//Criando array com os valores da lista
 let numbers = ["um", "dois", "três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
-
+//Populando lista
 for (let i = 0; i < 10 ; i+=1) {
-   console.log()
-   document.querySelector('.right-content').appendChild(listItems)
+   let listItem = document.createElement('li');
+   listItem.innerHTML=numbers[i];
+   list.appendChild(listItem)
 }
-//Refatorar
 
 //9
 for (let i = 0; i < 3 ; i+=1){
