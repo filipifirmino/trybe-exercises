@@ -21,7 +21,7 @@ document.querySelector(".main-content").appendChild(center)
 
 //Criando elemento p
 let text  = document.createElement('p');
-//Adcionando texto ao elemto 
+//Adcionando texto ao elemento 
 text.innerText = "Mais importante que a velocidade é a direção";
 //Inserindo na arvore dom 
 document.querySelector(".center-content").appendChild(text);
@@ -48,3 +48,19 @@ image.className = 'small-image';
 image.src = "https://picsum.photos/200";
 //Inserindo no dom
 document.querySelector(".left-content").appendChild(image)
+
+//Criando ul
+let list = document.createElement('ul');
+let listItems = document.createElement('li');
+let numbers = ["um", "dois", "três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
+
+for (let i = 0; i < 10 ; i+=1) {
+   console.log()
+   document.querySelector('.right-content').appendChild(listItems)
+}
+//Refatorar
+
+//9
+for (let i = 0; i < 3 ; i+=1){
+    document.querySelector(".main-content").appendChild(document.createElement('h3'))
+}
