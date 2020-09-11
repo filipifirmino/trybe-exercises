@@ -66,3 +66,23 @@ for (let i = 0; i < 10 ; i+=1) {
 for (let i = 0; i < 3 ; i+=1){
     document.querySelector(".main-content").appendChild(document.createElement('h3'))
 }
+
+// Parte 2
+//1
+title.className = "title";
+//2
+let subTitle = document.querySelectorAll('h3');
+for (let index in subTitle) {
+  subTitle[index].className="description";
+}
+//3
+let childRemove = document.querySelector('.left-content');
+content.removeChild(childRemove);
+//4
+let contRight = document.querySelector('.right-content');
+contRight.style.marginRight = "auto";
+//5
+center.parentNode.style.backgroundColor ="green";
+//6
+list.lastChild.remove();
+list.lastChild.remove();
