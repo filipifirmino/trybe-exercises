@@ -4,9 +4,10 @@ let fonts = ['Verdana', 'Arial', 'Arial Black'];
 let button = document.querySelector('#button-switch');
 button.addEventListener('change', tema)
 
+let container = document.querySelector('.container-fluid');
+
 function tema() {
     if(this.checked){
-        let container = document.querySelector('.container-fluid');
         container.style.backgroundColor = "#000";
     
         let title = document.querySelector('.title');
@@ -42,13 +43,27 @@ let textParg = document.querySelector('.text');
 
 selectFont.addEventListener('change', function (){
     textParg.style.fontFamily = selectFont.value;
+    
 });
 selectSize.addEventListener('change', function (){
     textParg.style.fontSize = selectSize.value;
+   
 });
 selectSpace.addEventListener('change', function (){
     textParg.style.lineHeight = selectSpace.value;
+    
 });
 
 
 //web Storage 
+
+let currentStyle = {
+    font : selectFont.value,
+    fontSize : selectSize.value,
+    lineSpace : selectSpace.value
+}
+function webStorage() {
+    localStorage.setItem('style',JSON.stringify(currentStyle));
+}
+selectFont.addEventListener('change', webStorage);
+
