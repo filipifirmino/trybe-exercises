@@ -38,19 +38,17 @@ function tema() {
 let selectFont = document.querySelector('#option');
 let selectSize = document.querySelector('#fontOption');
 let selectSpace = document.querySelector('#spaceOption');
+let textParg = document.querySelector('.text');
 
-selectFont.addEventListener('select', option);
-selectSize.addEventListener('select', option);
-selectSpace.addEventListener('select', option);
+selectFont.addEventListener('change', function (){
+    textParg.style.fontFamily = selectFont.value;
+});
+selectSize.addEventListener('change', function (){
+    textParg.style.fontSize = selectSize.value;
+});
+selectSpace.addEventListener('change', function (){
+    textParg.style.lineHeight = selectSpace.value;
+});
 
-function option(){
-    let font = document.querySelector('#painel');
-    let sizeFont = document.querySelector('#fontOption');
-    let space = document.querySelector('#spaceOption');
 
-    font.style.fontFamily = selectFont.value;
-    sizeFont.style.fontSize = selectSize.value;
-   // space.style.fontFamily = selectFont.value;
-    //Aplicar no texto
-}
 //web Storage 
