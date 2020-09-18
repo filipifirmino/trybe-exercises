@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="asset/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <header>
+        <h1 class="title">Cadastro de curriculo</h1>
+      </header>
+      <form method="post">
+        <fieldset id="dadosPessoais">
+          <legend>Dados Pessoais</legend>
+          <input type="text" name="name-user" id="name" placeholder="Nome" onfocus="" maxlength="40" required><br />
+          <input type="email" name="email-user" id="email" placeholder="E-mail" required maxlength="11"><br />
+          <input type="text" name="cpf-user" id="cpf" placeholder="cpf: 000.000.000-00" required><br />
+          <input type="text" name="end-user" id="endereco" placeholder="Endereço" required maxlength="200"><br />
+          <input type="text" name="cidade-user" id="cidade" placeholder="Cidade" required maxlength="28"><br />
+          Estado: <select name="estado-user" id="estado" required>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <br />
+          <input type="radio" name="casa" id="casa" value="casa"> Casa
+          <input type="radio" name="casa" id="ap" value="apartamento"> Apartamento
+        </fieldset>
+        <fieldset id="carreira">
+          <legend>Carreira</legend>
+          Resumo: <textarea name="resumo" id="resumo-user" cols="30" rows="10" maxlength="1000"
+            required></textarea><br />
+          <input type="text" id="cargo-user" name="cargo" placeholder="Cargo" required max="40"><br />
+          Descrição: <textarea name="" id="" cols="30" rows="10" required></textarea><br />
+          Data de inicio : <input type="date" name="data-cargo" id="dataCargo" required>
+          <span id="return"></span>
+          <br />
+          <input type="submit" value="Cadastrar" class="btn-submit">
+          <input type="reset" value="Limpar" class="btn-clear">
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script src="asset/js/main.js"></script>
+</body>
+
+</html>
