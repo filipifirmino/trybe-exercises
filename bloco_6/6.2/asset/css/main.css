@@ -1,0 +1,64 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12pt;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+input[type ='text'] {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type = 'email'] {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-submit {
+  background-color: royalblue;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+}
+
+.btn-submit:hover{
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn-clear {
+  background-color: rgb(253, 149, 30);
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+}
+
+.btn-clear:hover {
+  box-shadow: none;
+  cursor: pointer
+}

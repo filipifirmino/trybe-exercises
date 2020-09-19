@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="asset/css/bulma.css">
+  <link rel="stylesheet" href="asset/css/adjust.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="notification">
+      <header>
+        <h1 class="title">Cadastro de curriculo</h1>
+      </header>
+    </div>
+  </div>
+  <section class="section">
+    <form method="post">
+      <fieldset id="dadosPessoais">
+        <legend class="subtitle">Dados Pessoais</legend>
+        <div class="field">
+          <label for="name" class="label">Nome</label>
+          <div class="control">
+            <input class="input" type="text" name="name-user" id="name" onfocus="" maxlength="40" required>
+          </div>
+          <p class="help">Seu nome completo.</p>
+        </div>
+        <div class="field">
+          <label for="email-user" class="label">E-mail</label>
+          <div class="control">
+            <input class="input" type="email" name="email-user" id="email" placeholder="E-mail" required
+              maxlength="11" />
+          </div>
+          <p class="help">E-mail que você tenha acesso.</p>
+        </div>
+        <div class="field">
+          <label for="cpf-user" class="label">CPF</label>
+          <div class="control">
+            <input class="input" type="text" name="cpf-user" id="cpf" required />
+          </div>
+          <p class="help">Ex.:000.000.000-00</p>
+        </div>
+        <div class="field">
+          <label for="endereco" class="label">Endereço</label>
+          <div class="control">
+            <input class="input" type="text" name="end-user" id="endereco" required maxlength="200" />
+          </div>
+        </div>
+        <div class="field">
+          <div class="label" for="cidade">Cidade</div>
+          <div class="control">
+            <input class="input" type="text" name="cidade-user" id="cidade" required maxlength="28" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="estado" class="label">Estado</label>
+          <div class="control">
+            <div class="select">
+              <select class="select" name="estado-user" id="estado" required></select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="casa" class="radio">
+              <input type="radio" name="casa" id="casa" value="casa"> Casa
+            </label>
+            <label for="ap" class="radio">
+              <input type="radio" name="casa" id="ap" value="apartamento"> Apartamento
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset id="carreira">
+        <legend class="subtitle">Carreira</legend>
+        <div class="field">
+          <label for="resumo-user" class="label">Resumo</label>
+          <div class="control">
+            <textarea class="textarea" name="resumo" id="resumo-user" cols="30" rows="10" maxlength="1000"
+              required></textarea><br />
+          </div>
+        </div>
+        <div class="field">
+          <label for="cargo-user" class="label">Cargo</label>
+          <div class="control">
+            <input class="input" type="text" id="cargo-user" name="cargo" required max="40">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="desc" class="label">Descrição</label>
+          <div class="control">
+            <textarea class="textarea" name="desc" id="desc" cols="30" rows="10" required></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="">Data de inicio</label>
+          <div class="control">
+            <input type="date" class="input" name="data-cargo" id="dataCargo" required>
+            <span id="return"></span>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input type="submit" value="Cadastrar" class="button is-primary">
+            <input type="reset" value="Limpar" class="button is-warning">
+          </div>
+        </div>
+        <br />
+      </fieldset>
+    </form>
+  </section>
+
+  <script src="asset/js/main.js"></script>
+</body>
+
+</html>
