@@ -1,0 +1,19 @@
+body {
+font-size: 14pt;
+padding: 10px;;
+}
+h1 {
+font-size: 16pt;
+}
+h2 {
+font-size: 15pt;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    margin-bottom: 10px;
+}
