@@ -51,16 +51,16 @@ console.log(listvalues(lesson3));
 function collectionObject(...args) {
   const allLessons = {};
   Object.assign(allLessons, args);
-  Object.keys(allLessons).forEach((key) => {
-    for (let index = 1; index <= args.length; index += 1) {
+  for (let index = 1; index <= args.length; index += 1) {
+    //Isto pode ser simplificado pegando os valores dos objeto e somando direto
+    Object.keys(allLessons).forEach((key) => {
       let newKey = `lesson${[index]}`;
       allLessons[newKey] = allLessons[key];
       if (Object.keys(allLessons)[index - 1].length == 1) {
         delete allLessons[key];
       }
-    }
-  });
-
+    });
+  }
   return allLessons;
 }
 
