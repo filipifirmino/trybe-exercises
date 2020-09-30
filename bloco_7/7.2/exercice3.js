@@ -87,4 +87,16 @@ function countStudent(obj) {
   return out;
 }
 
-console.log(countStudent(collectionObject(lesson1, lesson2, lesson3)));
+//console.log(countStudent(collectionObject(lesson1, lesson2, lesson3)));
+
+// Step 7 
+const position = (array, key) => {
+  const index = Object.keys(array);
+  return array[index[key]];
+}
+
+const materias = {matematica : 'numero', portugues : 'lingua', }
+
+console.log(position(materias, 0));
+
+// Step 8
