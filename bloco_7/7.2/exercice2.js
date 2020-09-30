@@ -8,3 +8,5 @@ var myDog = {
   
   // Only change code below this line
   myDog.name = 'Happy Coder';
+
+  console.log(myDog);
