@@ -78,11 +78,13 @@ function collectionObject(...args) {
 //Step 6
 
 function countStudent(obj) {
-  for (let index = 0; index < Object.keys(obj).length; index += 1) {
-    let result = obj["lesson" + (index + 1)].numeroEstudantes;
-    result = result += result;
-    return result;
+  let out = 0;
+  const keys = Object.keys(obj);
+  for (let index = 0; index < keys.length; index += 1) {
+    let result = obj["lesson" + (index)].numeroEstudantes;
+    out = out + result;
   }
+  return out;
 }
 
 console.log(countStudent(collectionObject(lesson1, lesson2, lesson3)));
