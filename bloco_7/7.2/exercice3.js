@@ -97,6 +97,27 @@ const position = (array, key) => {
 
 const materias = {matematica : 'numero', portugues : 'lingua', }
 
-console.log(position(materias, 0));
+//console.log(position(materias, 0));
 
 // Step 8
+const equals =  (obj, key, value) => {
+  let out = 0;
+  const entries =  Object.entries(obj);
+  for (let index = 0 ; index < entries.length; index += 1) {
+    if(entries[index] == [key, value]) {
+       return  true;
+    } else {
+      out = false;
+    }
+  }
+  return out;
+}
+
+const people = {
+  maria : 'mulher',
+  joao : 'homem',
+  jununho : 'menino',
+  mariazinha : 'menina'
+}
+
+console.log(equals(people, 'mariazinha','menina'));
