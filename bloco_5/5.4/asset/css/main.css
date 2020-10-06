@@ -1,0 +1,52 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:12pt;
+  
+  }
+
+.container-fluid{
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  max-width: 1000px;
+  margin:auto;
+   
+}
+
+.title{
+  font-size:45pt;
+  font-family: Arial, Helvetica, sans-serif;
+  padding:10px;
+}
+
+.siwtch{
+display: flex;  
+}
+.switch-button{
+  margin-left:50%;
+  margin-top:20px;
+}
+.imgLogo{
+  margin-left:50%;
+}
+.imgLogo{
+  width: 100px;
+  height: 100px;
+  margin-top:20px;
+}
+.logo , .button{
+  flex:1;
+ 
+}
+.painel{
+  width: 200px;
+  height: 60px;
+  padding:20px;
+  border:1px solid #ccc;
+  margin-top: 50px;
+}
+.painel select{
+  margin-bottom: 10px;
+}
