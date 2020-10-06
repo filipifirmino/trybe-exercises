@@ -1,0 +1,43 @@
+body {
+  font-size: 14pt;
+  padding: 10px;
+}
+h1 {
+  font-size: 16pt;
+}
+h2 {
+  font-size: 15pt;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 520px) {
+ body{
+     background-color: rgb(169, 186, 233);
+     font-size: 15pt;
+     padding: 5px;
+ }
+ .container{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ figure {
+     margin : 10px;
+ }
+}
+
+@media screen and (min-width:1300px){
+    body { 
+      background-color: rgb(80, 90, 124);
+      font-size: 18pt;
+      padding: 15px;
+      max-width: 1580px;
+    }
+}

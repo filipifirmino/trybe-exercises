@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+.top{
+    display: flex;
+    align-items: center;
+    
+}
+
+.top p {
+    flex:1;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 25pt;
+}
+
+.top ul {
+    list-style: none;
+}
+
+.top ul li {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.top ul li:hover{
+    background-color: rgb(188, 194, 229);
+    cursor: pointer;
+    color: white;
+}
+
+.main-content{
+
+}
+.aside-content{
+    float: right;
+    margin-left: 30px;
+    height: 100vh;
+
+}
+
+footer h3{
+    color: gray;
+}
+footer p {
+    font-size: 10pt;
+    color: grey;
+}
+
+@media screen and (max-width: 1050px) {
+   .top ul {
+       display: none;
+       
+   }
+   .top {
+       text-align: center;
+   }
+   .container{
+       flex-direction: column-reverse;
+   }
+   .aside-content{
+    float: none;
+    margin-left: 30px;
+    height: auto;
+    }
+    .content {
+        flex-direction: column-reverse;
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+    }
+    .rodape{
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .top ul {
+        display: none;
+        
+    }
+    .top {
+        text-align: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        max-width: 600px;
+    }
+    .aside-content{
+     float: none;
+     margin-left: 30px;
+     height: auto;
+     }
+     .content {
+         flex-direction: column-reverse;
+         display: flex;
+         max-width: 100%;
+         padding: 20px;
+     }
+     .rodape{
+         max-width: 100%;
+         padding: 20px;
+     }
+ }
+
+@media screen and (max-width:400px) {
+    .top ul {
+        display: none;
+        
+    }
+    .top {
+        text-align: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        max-width: 400px;
+    }
+    .aside-content{
+     float: none;
+     margin-left: 30px;
+     height: auto;
+     }
+     .content {
+         flex-direction: column-reverse;
+         display: flex;
+         max-width: 100%;
+         padding: 20px;
+     }
+     .rodape{
+         max-width: 100%;
+         padding: 20px;
+     }
+ }
