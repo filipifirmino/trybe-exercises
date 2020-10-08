@@ -11,15 +11,12 @@ function studentAverage() {
     let alunoNota = [] ;
     notas.forEach((nota) => {
        alunoNota.push(nota.reduce((previus, current) => previus + current ) / nota.length);
-       
     });
     alunos.forEach((name, key) => {
         result.push({name:name, average:alunoNota[key]});
     });
-    
     return result;
 }
-
 const expected = [
   { name: 'Pedro Henrique', average: 7.8 },
   { name: 'Miguel', average: 9.2 },
