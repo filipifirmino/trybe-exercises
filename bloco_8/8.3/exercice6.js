@@ -7,6 +7,17 @@ const notas = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
 
 function studentAverage() {
   // escreva seu código aqui
+    let result = [];
+    let alunoNota = [] ;
+    notas.forEach((nota) => {
+       alunoNota.push(nota.reduce((previus, current) => previus + current ) / nota.length);
+       
+    });
+    alunos.forEach((name, key) => {
+        result.push({name:name, average:alunoNota[key]});
+    });
+    
+    return result;
 }
 
 const expected = [
