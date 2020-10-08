@@ -67,7 +67,7 @@ const books = [
 
 function allNames() {
   // escreva seu código aqui
-  const autohors = books.map((book)=>{
+  const authors = books.map((book)=>{
     return book.author.name;
   })
   const phrase = 'Nomes: ' + autohors.reduce((previus, current) => `${previus}, ${current}`) + '.';
