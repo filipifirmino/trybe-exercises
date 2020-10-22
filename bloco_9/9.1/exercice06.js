@@ -20,7 +20,16 @@ const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now 
 const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`);
 
 // definição da função sendMarsTemperature...
-
+const sendMarsTemperature = () => {
+  temperatureInFahrenheit(getMarsTemperature);
+  if(temperatureInFahrenheit(getMarsTemperature()) ===  undefined){
+    handleError('Robot is busy');
+  }
+  greet(getMarsTemperature());
+  if(greet(getMarsTemperature()) === undefined){
+    handleError('Robot is busy');
+  }
+}
 
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
 sendMarsTemperature(temperatureInFahrenheit, handleError);
