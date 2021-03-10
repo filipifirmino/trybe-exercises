@@ -1,0 +1,1 @@
+db.superheroes.find({ $nor: [{'race':'human'},{'aspects.height':180}]});
