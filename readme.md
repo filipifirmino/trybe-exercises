@@ -6,4 +6,8 @@
 <strong>SHELL</strong><br/>
 <strong>HTML & CSS</strong><br/>
 <strong>Java Script</strong><br/>
-
+<strong>ReactJS</strong><br/>
+<strong>Redux</strong><br/>
+<strong>Contexte API</strong><br/>
+<strong>Mysql</strong><br/>
+<strong>MOngoDB</strong><br/>
